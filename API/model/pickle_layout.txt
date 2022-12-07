@@ -1,0 +1,37 @@
+{
+'rf_global': {
+                'model': RandomForestClassifier(max_depth=3), 
+                'count_vectorizer_unique': CountVectorizer(max_features=2000),
+                'score': 0.56,
+                'branch': 'all'
+                }, 
+'lr_global': {
+                'model': LogisticRegression(),
+                'count_vectorizer_unique': CountVectorizer(max_features=2000),
+                'score': 0.62,
+                'branch': 'all'
+                },
+'dt_global': {
+                'model': DecisionTreeClassifier(max_depth=8),
+                'count_vectorizer_unique': CountVectorizer(max_features=2000),
+                'score': 0.57,
+                'branch': 'all'
+                },
+'rf_Disneyland_HongKong': {
+                'model': RandomForestClassifier(max_depth=5, n_estimators=20),
+                'count_vectorizer_unique': CountVectorizer(max_features=2000),
+                'score': 0.48,
+                'branch': 'Disneyland_HongKong'
+                },
+'rf_Disneyland_California': {
+                'model': RandomForestClassifier(max_depth=5, n_estimators=20),
+                'count_vectorizer_unique': CountVectorizer(max_features=2000),
+                'score': 0.64, 
+                'branch': 'Disneyland_California'
+                },
+'rf_Disneyland_Paris': {
+                'model': RandomForestClassifier(max_depth=5, n_estimators=20),
+                'count_vectorizer_unique': CountVectorizer(max_features=2000),
+                'score': 0.44,
+                'branch': 'Disneyland_Paris'}
+}

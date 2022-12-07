@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: disneyland-rating-prediction-deployment
+  labels:
+    app: disneyland-rating-prediction-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: disneyland-rating-prediction-api
+  template:
+    metadata:
+      labels:
+        app: disneyland-rating-prediction-api
+    spec:
+      containers:
+      - name: disneyland-rating-prediction-api
+        image: brmaxime/project_mlops_api:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: IP_ADRESS
+          value: '34.247.1.212'
+        - name: IP_PORT
+          value: '8000'

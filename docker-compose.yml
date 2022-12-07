@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  api:
+    image: disney_pred_api:latest
+    container_name: api_container
+    networks:
+      - my_nw
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: curl --fail -s http://localhost:8000/ || exit 1
+      interval: 5s
+      timeout: 3s
+      retries: 5
+  test:
+    image: test_img:latest
+    container_name: test_container
+    networks:
+      - my_nw
+    volumes:
+      - ./results:/test/results
+    depends_on:
+      api:
+        condition: service_healthy
+    environment:
+      LOG: 1
+      IP_ADRESS: 34.247.1.212
+      IP_PORT: 8000
+networks:
+  my_nw:

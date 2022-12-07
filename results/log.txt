@@ -1,0 +1,915 @@
+
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= alice
+    | password= ca glisse
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= bob
+    | password= BUILDER
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= clementine
+    | password= loot
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= admin
+    | password= admin
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= alice
+    | password= John Doe
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= bob
+    | password= builder
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= clementine
+    | password= mandarine
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= admin
+    | password= 4dm1N
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_global
+
+    expected result = 0.54
+    actual restult = 0.54
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = lr_global
+
+    expected result = 0.61
+    actual restult = 0.61
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = dt_global
+
+    expected result = 0.55
+    actual restult = 0.55
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_HongKong
+
+    expected result = 0.48
+    actual restult = 0.48
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_California
+
+    expected result = 0.65
+    actual restult = 0.65
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_Paris
+
+    expected result = 0.45
+    actual restult = 0.45
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_global
+    | model_name = Disneyland is a magical world!
+
+    expected result = 5
+    comment = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = lr_global
+    | model_name = Disneyland is a magical world!
+
+    expected result = 5
+    comment = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = dt_global
+    | model_name = Disneyland is a magical world!
+
+    expected result = 5
+    comment = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_HongKong
+    | model_name = Disneyland is a magical world!
+
+    expected result = 5
+    comment = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_California
+    | model_name = Disneyland is a magical world!
+
+    expected result = 5
+    comment = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_Paris
+    | model_name = Disneyland is a magical world!
+
+    expected result = 5
+    comment = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= alice
+    | password= ca glisse
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= bob
+    | password= BUILDER
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= clementine
+    | password= loot
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= admin
+    | password= admin
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= alice
+    | password= John Doe
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= bob
+    | password= builder
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= clementine
+    | password= mandarine
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permission"
+    | username= admin
+    | password= 4dm1N
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_global
+
+    expected result = 0.54
+    actual restult = 0.54
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = lr_global
+
+    expected result = 0.61
+    actual restult = 0.61
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = dt_global
+
+    expected result = 0.55
+    actual restult = 0.55
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_HongKong
+
+    expected result = 0.48
+    actual restult = 0.48
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_California
+
+    expected result = 0.65
+    actual restult = 0.65
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_Paris
+
+    expected result = 0.45
+    actual restult = 0.45
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_global
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = lr_global
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = dt_global
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_HongKong
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_California
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_Paris
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/permission"
+    | username= alice
+    | password= ca glisse
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/permission"
+    | username= bob
+    | password= BUILDER
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/permission"
+    | username= clementine
+    | password= loot
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/permission"
+    | username= admin
+    | password= admin
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/permission"
+    | username= alice
+    | password= John Doe
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/permission"
+    | username= bob
+    | password= builder
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/permission"
+    | username= clementine
+    | password= mandarine
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/permission"
+    | username= admin
+    | password= 4dm1N
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+    
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_global
+
+    expected result = 0.54
+    actual restult = 0.54
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+    
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = lr_global
+
+    expected result = 0.61
+    actual restult = 0.61
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+    
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = dt_global
+
+    expected result = 0.55
+    actual restult = 0.55
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+    
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_HongKong
+
+    expected result = 0.48
+    actual restult = 0.48
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+    
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_California
+
+    expected result = 0.65
+    actual restult = 0.65
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get performance test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+    
+    request done at "/performance"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_Paris
+
+    expected result = 0.45
+    actual restult = 0.45
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_global
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = lr_global
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = dt_global
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_HongKong
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_California
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    
+    ============================
+        get prediction test
+    ============================
+    | test date/time = 03/11/2022 15:13:20
+
+    request done at "/prediction"
+    | username= bob
+    | password= builder
+    | model_name = rf_Disneyland_Paris
+    | comment = Disneyland is a magical world!
+
+    expected result = 5
+    result = 5
+
+    ==>  SUCCESS
+
+    

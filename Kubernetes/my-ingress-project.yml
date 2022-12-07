@@ -1,0 +1,10 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: disneyland-rating-prediction-ingress
+spec:
+  defaultBackend:
+    service:
+      name: disneyland-rating-prediction-service
+      port:
+        number: 8001
